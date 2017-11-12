@@ -1,1 +1,5 @@
-# Real-Time-Eye-State-Classification
+# Real time eye state classification
+Developed a window based application which can play videos and can pause them automatically when a user is not looking at screen. The input for this application will be a video captured from webcam of user’s computer.
+In this application, while user is watching a video, in background software captures video through webcam and detects user’s face and eye continuously. When it detects face and eye, the video frame is sent for further processing. At this stage, K-means clustering is applied to determine where user is looking and if for several continuous frames user is not looking at screen, video is paused.
+The project is developed using C# and Visual C++ using OpenCV library. Viola Jones algorithm is used to detect face and eye. K-means clustering is used to determine direction where user is looking.
+For more information and technical details please refer our paper “Real Time System for Student Fatigue Detection during Online Learning” published in International Journal of Hybrid Information Technology (Vol. 9, No. 3 (2016))
